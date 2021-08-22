@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page5</title>
+        <link rel = "stylesheet" type="text/css" href="style.css">
+       
+</head>
+    <body>
+        <section class = "sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <img class="img1" onclick="hideMenu()" src = "images/close.png" >
+                   
+                    <ul>
+                        <li><a href="index.html" >HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="block.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+
+                </div>
+               <img  class="img1" onclick="showMenu()" src="images/menu.png">
+            </nav>
+            <h1>Contact Us</h1>
+        </section>
+
+        <!-- --------------------- contact us ------------->
+
+        <section class="location">
+        <img src="images/map.png">
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                    <img src="images/home.png" width="50px" height="50px">
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Banglore, Karnataka, IN</p>
+                    </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <div>
+                <img src="images/phone.png" width="50px" height="50px">
+                <span>
+                    <h5>+1 0123456789</h5>
+                    <p>Monday to Saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+            </div>
+            
+            <div class="contact-col">
+                <div>
+                <img src="images/envelop.jpg" width="50px" height="50px">
+                <span>
+                    <h5>abc123@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form_handler.php" method="POST">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="nessage" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+            </div>
+        </section>
+
+    
+            <!-----------------Footer -------------------->
+            <section class="footer">
+                <h4>About Us</h4>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when<br> an unknown printer took a galley of type and scrambled it to make a
+                    type specimen book.</p>
+
+                    <div class="icons">
+                        <img src="images/FILT.jfif" class="ig" width="9%">
+                        <p>Made with <img src="images/heart.png" class="heart" width="20px"> by AK</p>
+                    </div>
+                </section>
+
+        <!------------------ JavaScript code for Toggle Menu --------------------->
+         <script>
+             var navLinks = document.getElementById("navLinks");
+             function showMenu(){
+                navLinks.style.right = "0";             
+             }
+             function hideMenu(){
+
+                navLinks.style.right = "-200px";
+}
+         </script>
+
+    </body>
+</html>
